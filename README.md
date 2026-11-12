@@ -26,7 +26,7 @@ Automated tests run in GitHub Actions via `.github/workflows/scoring-tests.yml`.
 
 ## GitHub Pages
 
-This repository is currently named `deubank-mws.github.io` under the account `dietricheubank`. To host the site as the clean account homepage at `https://dietricheubank.github.io/`, rename this repository to `dietricheubank.github.io` and verify **Settings → Pages** is publishing from the desired source. Until then, use the repository's Pages deployment link rather than assuming the root URL.
+This user-site repository is named `dietricheubank.github.io`. The intended public homepage is `https://dietricheubank.github.io/`, once the GitHub Pages deployment completes.
 
 ## Privacy and accuracy
 
