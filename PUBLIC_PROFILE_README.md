@@ -2,7 +2,7 @@
 
 **Enterprise technology leadership | Local AI infrastructure | Modern workplace | Reliability**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0F766E?style=for-the-badge)](https://deubank-mws.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0F766E?style=for-the-badge)](https://dietricheubank.github.io/)
 [![GX10 Case Study](https://img.shields.io/badge/GX10-Read%20Case%20Study-76B900?style=for-the-badge)](https://github.com/dietricheubank/GX10Experment)
 
 I connect technology strategy with hands-on experimentation—building reliable platforms, improving workplace services, and exploring practical AI.
@@ -34,6 +34,6 @@ See the [public project roadmap](PROJECT_ROADMAP.md) for scoped build plans.
 - Use human approval for consequential AI actions.
 - Share reusable lessons while protecting confidential details.
 
-**[Portfolio website](https://deubank-mws.github.io/) · [Public experiment](https://github.com/dietricheubank/GX10Experment)**
+**[Portfolio website](https://dietricheubank.github.io/) · [Public experiment](https://github.com/dietricheubank/GX10Experment)**
 
 > This is a personal portfolio. Public examples are generalized and do not represent an employer or disclose sensitive workplace or home infrastructure.
