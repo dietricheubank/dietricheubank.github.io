@@ -8,7 +8,7 @@ This repository contains the source for my personal portfolio at **https://deuba
 - A public index of selected technical projects
 
 ## Featured public project
-[GX10 Experiment](https://github.com/deubank-mws/GX10Experment) documents the architecture, observations, reliability improvements, and lessons from a two-node NVIDIA GB10 local AI platform.
+[GX10 Experiment](https://github.com/dietricheubank/GX10Experment) documents the architecture, observations, reliability improvements, and lessons from a two-node NVIDIA GB10 local AI platform.
 
 ## Site details
 The site is a lightweight static HTML/CSS portfolio with no external application dependencies. Edit `index.html` to update project cards or the introduction.
