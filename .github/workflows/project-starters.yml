@@ -1,0 +1,36 @@
+name: Six project starter tests
+on:
+  push:
+    paths:
+      - 'projects/**'
+      - '.github/workflows/project-starters.yml'
+  pull_request:
+    paths:
+      - 'projects/**'
+      - '.github/workflows/project-starters.yml'
+permissions:
+  contents: read
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - enterprise-agent-framework
+          - cio-scorecard
+          - it-investment-optimizer
+          - llm-observability-stack
+          - modern-workplace-toolkit
+          - ai-governance-toolkit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Execute unit tests
+        working-directory: projects/${{ matrix.project }}
+        run: python -m unittest discover -s tests -v
+      - name: Compile Python
+        working-directory: projects/${{ matrix.project }}
+        run: python -m compileall -q app.py tests
