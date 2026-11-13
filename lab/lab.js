@@ -1,0 +1,11 @@
+"use strict";
+const initiatives=[
+{id:"identity",name:"Identity resilience",cost:5,value:8,risk:3},
+{id:"endpoint",name:"Endpoint modernization pilot",cost:7,value:9,risk:2},
+{id:"knowledge",name:"Service knowledge foundation",cost:3,value:5,risk:1},
+{id:"telemetry",name:"Service health telemetry",cost:4,value:6,risk:2},
+{id:"automation",name:"Workflow automation pilot",cost:6,value:7,risk:1}
+];const $=id=>document.getElementById(id);const state=new Set();
+function update(){const b=Number($("budget").value);const valid=Number.isInteger(b)&&b>=0&&b<=1000;let cost=0,val=0,reduction=0;for(const p of initiatives)if(state.has(p.id)){cost+=p.cost;val+=p.value;reduction+=p.risk}const exceeded=valid&&cost>b;$("options").innerHTML="";for(const p of initiatives){const lab=document.createElement("label");lab.className="pick";const input=document.createElement("input");input.type="checkbox";input.checked=state.has(p.id);input.disabled=!input.checked&&(cost+p.cost>b||!valid);input.onchange=()=>{input.checked?state.add(p.id):state.delete(p.id);update()};const name=document.createElement("span");name.textContent=p.name;const amount=document.createElement("span");amount.className="note";amount.textContent=p.cost+" units · value "+p.value;lab.append(input,name,amount);$("options").append(lab)}$("cost").textContent=cost+(valid?" / "+b:"");$("benefit").textContent=val;$("risk").textContent=Math.max(0,10-reduction)+" / 10";$("brief").textContent=!valid?"Enter a whole-number investment limit between 0 and 1000.":exceeded?"Selection exceeds capacity. Remove an initiative.":"FICTIONAL INVESTMENT DECISION\nSelected: "+(initiatives.filter(x=>state.has(x.id)).map(x=>x.name).join(", ")||"None")+"\nCommitment: "+cost+" / "+b+" units\nUnallocated: "+(b-cost)+" units\nValue score: "+val+" (illustrative)\nResidual risk index: "+Math.max(0,10-reduction)+" (synthetic)\n\nBefore approving: verify implementation capacity, dependencies, benefits and risk.";
+}
+$("budget").onchange=update;$("reset").onclick=()=>{state.clear();$("budget").value=13;update()};$("print").onclick=()=>window.print();update();
