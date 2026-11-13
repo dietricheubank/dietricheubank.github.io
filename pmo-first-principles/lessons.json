@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Projects and outcomes",
+    "principle": "A project is temporary work intended to create a unique outcome. Operations sustain an ongoing service. Define the problem before proposing a solution.",
+    "scenario": "A team receives requests for a new onboarding checklist. Is this a project or routine support?",
+    "exercise": "Write a one-sentence problem statement, expected outcome, and observable success measure.",
+    "question": "Which is a measurable project outcome?",
+    "choices": [
+      "Hold three meetings",
+      "Reduce onboarding rework by 30% in 90 days",
+      "Create a slide deck"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "title": "The sponsor and the charter",
+    "principle": "A sponsor owns the business case and decisions. A charter makes purpose, scope, boundaries, roles, assumptions and authority visible.",
+    "scenario": "A project launches with a project lead but nobody empowered to resolve competing priorities.",
+    "exercise": "Draft a one-page charter stating sponsor, owner, scope, exclusions, deadline, and success criteria.",
+    "question": "Who resolves a scope-versus-funding tradeoff?",
+    "choices": [
+      "Executive sponsor / accountable decision maker",
+      "Any available contributor",
+      "The status report"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "title": "Stakeholders and communication",
+    "principle": "Identify people impacted by change. Map influence and impact. Agree when decisions, risks and changes must be communicated.",
+    "scenario": "A support team learns about a new workflow only on launch day.",
+    "exercise": "Create a stakeholder map and a communication plan with audience, purpose, channel, frequency and owner.",
+    "question": "A good communication plan starts with:",
+    "choices": [
+      "A tool choice",
+      "Audience and decision needs",
+      "The longest possible report"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "title": "Scope and deliverables",
+    "principle": "Define what is included, excluded, and accepted. Break outcomes into verifiable deliverables. Prevent uncontrolled additions.",
+    "scenario": "A small reporting project expands to include a new database and mobile application.",
+    "exercise": "List five deliverables, three exclusions and one acceptance test per deliverable.",
+    "question": "What prevents ambiguous completion?",
+    "choices": [
+      "Acceptance criteria",
+      "More meetings",
+      "Unapproved scope additions"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "title": "Schedule and dependencies",
+    "principle": "Plan milestones based on actual dependencies and capacity. Separate duration from effort; track the critical handoffs and assumptions.",
+    "scenario": "A pilot needs security approval before production onboarding.",
+    "exercise": "Create a milestone plan with dates, dependency, owner and evidence of completion.",
+    "question": "Which step should happen first?",
+    "choices": [
+      "Launch before approval",
+      "Resolve dependency with owner",
+      "Hide the schedule risk"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 6,
+    "title": "Capacity and resources",
+    "principle": "People do not become available simply because a plan allocates them. Make demand, constraints and tradeoffs explicit.",
+    "scenario": "One specialist is scheduled across three simultaneous projects.",
+    "exercise": "Create a lightweight capacity table identifying bottleneck roles, availability and alternatives.",
+    "question": "A resource-constrained plan should:",
+    "choices": [
+      "Ignore competing work",
+      "Document the tradeoff",
+      "Assume infinite capacity"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 7,
+    "title": "Risks, issues, assumptions, decisions",
+    "principle": "A risk might occur; an issue is already happening. Assumptions need validation; decisions need accountable owners and dates. Maintain a useful RAID log.",
+    "scenario": "A vendor might miss delivery, and an existing integration is already failing tests.",
+    "exercise": "Record one risk, one issue, one assumption and one pending decision.",
+    "question": "Which statement describes an issue?",
+    "choices": [
+      "Testing is currently failing",
+      "A vendor could be late",
+      "A forecast may change"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "title": "Execution and transparent status",
+    "principle": "Report progress against outcomes, next milestones, blockers and decisions. Separate facts from forecasts; escalate early.",
+    "scenario": "A milestone slips, but the status stays green because the team worked hard.",
+    "exercise": "Publish a one-page status report with evidence, forecast, risk, and decision needed.",
+    "question": "A credible project status report should:",
+    "choices": [
+      "Hide slippage until resolved",
+      "Include forecast and decision needs",
+      "Measure only activity"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "title": "Change control and governance",
+    "principle": "Governance should enable proportionate decisions. Evaluate changes to scope, schedule, budget, quality, benefits and risk before authorizing them.",
+    "scenario": "A new requirement adds six weeks and changes the project budget.",
+    "exercise": "Complete a change request showing reason, options, impact, owner and approval.",
+    "question": "Before implementing a major scope change:",
+    "choices": [
+      "Assess impact and obtain decision",
+      "Just add it to the backlog",
+      "Rewrite the baseline silently"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "title": "Transition, closure and benefits",
+    "principle": "Project completion is not just launch. Confirm operational ownership, support, documentation, acceptance and later benefits measurement.",
+    "scenario": "The new workflow goes live but no service owner or monitoring is assigned.",
+    "exercise": "Write an operational handoff checklist, lessons learned and 30/90-day benefits review.",
+    "question": "What makes a sustainable handoff?",
+    "choices": [
+      "Named support owner and acceptance",
+      "Only a launch announcement",
+      "Closing the project immediately"
+    ],
+    "answer": 0
+  }
+]
