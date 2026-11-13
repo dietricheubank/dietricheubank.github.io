@@ -5,6 +5,7 @@ on:
       - '**/*.html'
       - '**/*.css'
       - '**/*.svg'
+      - '**/*.js'
       - 'sitemap.xml'
       - 'tests/**'
       - '.github/workflows/site-checks.yml'
@@ -21,3 +22,6 @@ jobs:
           python-version: '3.12'
       - name: Check local navigation and assets
         run: python -m unittest discover -s tests -v
+      - name: Check JavaScript syntax
+        run: |
+          find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
