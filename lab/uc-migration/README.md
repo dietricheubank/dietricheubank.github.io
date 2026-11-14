@@ -11,5 +11,5 @@ Original public educational simulation of enterprise telephony migration plannin
 ## Limitations
 - No Microsoft Graph or carrier integrations
 - No actual number portability, call routing, or emergency service validation
-- The number/license readiness upper bound cannot establish user-level overlap
+- Number/license readiness is reported as a possible range: minimum overlap = max(0, number-ready + licensed − total), maximum overlap = min(number-ready, licensed). Percentages are treated as exact for this illustrative estimate; actual user-level overlap requires a joined inventory.
 - The recommended go/hold labels are fictional guidance, not deployment authorization
