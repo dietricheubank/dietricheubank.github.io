@@ -78,7 +78,7 @@ test("reset restores the conservative fictional baseline", () => {
   checkAll();
   change("users", 250);
   nodes.reset.onclick();
-  assert.equal(nodes.users.value, 160);
+  assert.equal(nodes.users.value, "160");
   assert.equal(nodes.status.textContent, "HOLD");
   assert.equal(nodes.gates.children.filter(label => label.children[0].checked).length, 2);
 });
