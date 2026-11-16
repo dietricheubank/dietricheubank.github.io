@@ -7,7 +7,10 @@ const vm = require("node:vm");
 
 function element(value = "") {
   return {
-    value: String(value), textContent: "", className: "", checked: false,
+    _value: String(value),
+    get value() { return this._value; },
+    set value(next) { this._value = String(next); },
+    textContent: "", className: "", checked: false,
     children: [], listeners: {},
     append(...children) { this.children.push(...children); },
     addEventListener(type, fn) { this.listeners[type] = fn; },
