@@ -74,7 +74,7 @@ test("completed rollout has zero remaining weeks and resets to baseline", () => 
   assert.equal(nodes.percent.textContent, "100.0%");
   assert.equal(nodes.duration.textContent, 0);
   nodes.reset.onclick();
-  assert.equal(nodes.done.value, 275);
-  assert.equal(nodes.blockers.value, 2);
+  assert.equal(nodes.done.value, "275");
+  assert.equal(nodes.blockers.value, "2");
   assert.equal(nodes.decision.textContent, "HOLD");
 });
