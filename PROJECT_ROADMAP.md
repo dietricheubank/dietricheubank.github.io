@@ -9,10 +9,11 @@
 - IT Leadership Playbook with PMO, scorecard, RACI, ADR and 90-day templates
 - Three public engineering/leadership articles
 - Website navigation validation, scoring tests, sitemap, and robots.txt
+- Verified LinkedIn link on the GitHub profile and About page
 
 ## Next iterations
 - Real (authorized) screenshots and a verified headshot; current graphics are labeled illustrative
-- Verified LinkedIn URL, professional résumé and credentials review before publication
+- Professional résumé and credentials review before publication
 - Scoring tool: model JSON save/load, CSV import, capacity calendar, sensitivity analysis and exact optimization (current shortlist is greedy)
 - Incident demo: optional local test harness, scenario selection and deeper audit examples
 - Documented deployment performance and accessibility audits
