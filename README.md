@@ -53,7 +53,7 @@ GitHub Actions runs these validation checks for relevant changes.
 
 Scoring scenarios and incident events are **fictional**. Diagrams are **illustrative**, not live configuration exports. No real AI systems, employer environments, customer data, patient records, secret keys, or private network details are connected to these public demos.
 
-The portfolio does not present unverified project outcome metrics. Site analytics and a public contact form have intentionally not been added to avoid unnecessary third-party data collection; GitHub provides a public contact path. A headshot, LinkedIn URL and PDF résumé require verified assets before publication.
+The portfolio does not present unverified project outcome metrics. Site analytics and a public contact form have intentionally not been added to avoid unnecessary third-party data collection; GitHub provides a public contact path. For professional background and contact, see [LinkedIn](https://www.linkedin.com/in/dietrich-eubank-83043810/).
 
 ## License
 
