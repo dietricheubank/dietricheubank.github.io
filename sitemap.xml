@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dietricheubank.github.io/</loc></url>
-<url><loc>https://dietricheubank.github.io/about/</loc></url>
-<url><loc>https://dietricheubank.github.io/case-studies/forge.html</loc></url>
-<url><loc>https://dietricheubank.github.io/leadership/</loc></url>
-<url><loc>https://dietricheubank.github.io/insights/</loc></url>
-<url><loc>https://dietricheubank.github.io/insights/reliable-local-ai.html</loc></url>
-<url><loc>https://dietricheubank.github.io/insights/scoring-is-not-governance.html</loc></url>
-<url><loc>https://dietricheubank.github.io/insights/operating-review.html</loc></url>
-<url><loc>https://dietricheubank.github.io/demos/ai-ops/</loc></url>
-<url><loc>https://dietricheubank.github.io/tools/priority-scoring/v2.html</loc></url>
+  <url><loc>https://dietricheubank.github.io/</loc></url>
+  <url><loc>https://dietricheubank.github.io/about/</loc></url>
+  <url><loc>https://dietricheubank.github.io/case-studies/forge.html</loc></url>
+  <url><loc>https://dietricheubank.github.io/demos/ai-ops/</loc></url>
+  <url><loc>https://dietricheubank.github.io/demos/investment-optimizer/</loc></url>
+  <url><loc>https://dietricheubank.github.io/demos/technology-scorecard/</loc></url>
+  <url><loc>https://dietricheubank.github.io/insights/</loc></url>
+  <url><loc>https://dietricheubank.github.io/insights/operating-review.html</loc></url>
+  <url><loc>https://dietricheubank.github.io/insights/reliable-local-ai.html</loc></url>
+  <url><loc>https://dietricheubank.github.io/insights/scoring-is-not-governance.html</loc></url>
+  <url><loc>https://dietricheubank.github.io/lab/</loc></url>
+  <url><loc>https://dietricheubank.github.io/lab/clinical-dashboard/</loc></url>
+  <url><loc>https://dietricheubank.github.io/lab/clinical-endpoints/</loc></url>
+  <url><loc>https://dietricheubank.github.io/lab/uc-migration/</loc></url>
+  <url><loc>https://dietricheubank.github.io/leadership/</loc></url>
+  <url><loc>https://dietricheubank.github.io/pmo-first-principles/</loc></url>
+  <url><loc>https://dietricheubank.github.io/projects/</loc></url>
+  <url><loc>https://dietricheubank.github.io/tools/priority-scoring/</loc></url>
+  <url><loc>https://dietricheubank.github.io/tools/priority-scoring/v2.html</loc></url>
 </urlset>
