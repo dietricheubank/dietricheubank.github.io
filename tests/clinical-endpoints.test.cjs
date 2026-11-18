@@ -86,3 +86,28 @@ test("reset restores the fictional baseline and conservative gates", () => {
   assert.equal(nodes.status.textContent, "HOLD");
   assert.equal(nodes.gates.children.filter(label => label.children[0].checked).length, 2);
 });
+
+test("partial final deployment wave never exceeds the remaining device count", () => {
+  const { nodes, change } = boot();
+  change("devices", 101);
+  change("pilot", 10);
+  change("rate", 20);
+  change("teams", 2);
+  assert.equal(nodes.weeks.textContent, 3);
+  const waveCounts = nodes.waves.children.map(row => Number(row.children[1].textContent));
+  assert.deepEqual(waveCounts, [40, 40, 11]);
+  assert.equal(waveCounts.reduce((sum, count) => sum + count, 0), 91);
+});
+
+test("out-of-range and fractional capacity inputs cannot produce a deployment plan", () => {
+  const { nodes, change, checkAll } = boot();
+  checkAll();
+  for (const [id, invalid] of [["teams", 21], ["rate", 101], ["devices", 10001], ["pilot", 0], ["teams", 1.5], ["devices", "not-a-number"]]) {
+    const previous = nodes[id].value;
+    change(id, invalid);
+    assert.equal(nodes.status.textContent, "Check inputs", id);
+    assert.equal(nodes.waves.children.length, 0, id);
+    change(id, previous);
+  }
+  assert.equal(nodes.status.textContent, "Pilot gate met");
+});
