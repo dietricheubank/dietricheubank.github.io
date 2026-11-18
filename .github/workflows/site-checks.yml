@@ -6,6 +6,7 @@ on:
       - '**/*.css'
       - '**/*.svg'
       - '**/*.js'
+      - '**/*.cjs'
       - 'sitemap.xml'
       - 'tests/**'
       - '.github/workflows/site-checks.yml'
