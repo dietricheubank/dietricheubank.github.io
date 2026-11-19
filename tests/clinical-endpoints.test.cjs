@@ -111,3 +111,15 @@ test("out-of-range and fractional capacity inputs cannot produce a deployment pl
   }
   assert.equal(nodes.status.textContent, "Pilot gate met");
 });
+
+test("unknown configuration mixes fail closed instead of silently using balanced", () => {
+  const { nodes, change, checkAll } = boot();
+  checkAll();
+  change("mix", "unrecognized");
+  assert.equal(nodes.status.textContent, "Check inputs");
+  assert.equal(nodes.waves.children.length, 0);
+  assert.equal(nodes.shared.textContent, "—");
+  change("mix", "assigned");
+  assert.equal(nodes.status.textContent, "Pilot gate met");
+  assert.equal(nodes.shared.textContent, "300");
+});
